@@ -115,6 +115,8 @@ const generateSpec = (config, plotData) => {
         orient: 'bottom',
         scale: 'x',
         zindex: 1,
+        labelAngle: config.xAxisGrouping === 'louvain' ? 45 : 0,
+        labelAlign: config.xAxisGrouping === 'louvain' ? 'left' : 'center',
         title: { value: config.axes.xAxisText },
         titleFont: { value: config.fontStyle.font },
         labelFont: { value: config.fontStyle.font },
