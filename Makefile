@@ -15,8 +15,8 @@ check: ## Checks code for linting/construct errors
 	@npm run lint
 	@npm run detect-secrets
 	@echo "    [✓]\n"
-run: build ## Runs the UI 
-	@npm start
+run: build ## Runs the UI
+	@export NODE_OPTIONS=--max_old_space_size=4096 npm start
 .PHONY:install build check run help
 clean: ## Cleans up temporary files
 	@echo "==> Cleaning up node modules ..."
