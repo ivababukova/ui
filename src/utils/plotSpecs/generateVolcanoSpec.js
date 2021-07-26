@@ -252,7 +252,7 @@ const generateSpec = (configSrc, data) => {
             x: { scale: 'x', field: 'avg_log2FC' },
             y: { scale: 'y', field: 'neglogpvalue' },
 
-            fill: config.colour.masterColour,
+            fill: { value: config.colour.masterColour },
             text: { field: 'gene_names' },
           },
           transform: [
