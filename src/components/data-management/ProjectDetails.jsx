@@ -761,6 +761,7 @@ const ProjectDetails = ({ width, height }) => {
             <Title level={3}>{activeProject.name}</Title>
             <Space>
               <Button
+                id='add-samples-button'
                 disabled={projects.ids.length === 0}
                 onClick={() => setUploadModalVisible(true)}
               >

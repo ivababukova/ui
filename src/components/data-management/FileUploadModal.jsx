@@ -147,6 +147,7 @@ const FileUploadModal = (props) => {
         <Button
           type='primary'
           key='create'
+          id='upload-samples-button'
           block
           disabled={!canUpload}
           onClick={() => {
@@ -183,7 +184,7 @@ const FileUploadModal = (props) => {
 
         {/* eslint-disable react/jsx-props-no-spreading */}
         <Col span={24}>
-          <Dropzone onDrop={onDrop} multiple>
+          <Dropzone id='upload-dropzone' onDrop={onDrop} multiple>
             {({ getRootProps, getInputProps }) => (
               <div style={{ border: '1px solid #ccc', padding: '2rem 0' }} {...getRootProps({ className: 'dropzone' })} id='dropzone'>
                 <input {...getInputProps()} webkitdirectory='' />
