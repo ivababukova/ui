@@ -187,7 +187,7 @@ const FileUploadModal = (props) => {
           <Dropzone id='upload-dropzone' onDrop={onDrop} multiple>
             {({ getRootProps, getInputProps }) => (
               <div style={{ border: '1px solid #ccc', padding: '2rem 0' }} {...getRootProps({ className: 'dropzone' })} id='dropzone'>
-                <input {...getInputProps()} webkitdirectory='' />
+                <input {...getInputProps()} webkitdirectory='' id='upload-samples' />
                 <Empty description='Drag and drop folders here or click to browse.' image={Empty.PRESENTED_IMAGE_SIMPLE} />
               </div>
             )}
