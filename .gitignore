@@ -33,6 +33,7 @@ logs/
 .env.test.local
 .env.production.local
 __MACOSX
+assets/self-styles.less
 
 # custom
 .next
